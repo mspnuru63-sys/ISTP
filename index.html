@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ISTP – Université Professionnelle du Sénégal</title>
+<meta name="description" content="ISTP forme les talents de demain. 42 filières professionnelles, 92% d'insertion et un campus moderne au cœur de Dakar. Objectif 20 000 étudiants en 2030.">
+<meta name="theme-color" content="#0a1f44">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="ISTP – L'université qui transforme les talents">
+<meta property="og:description" content="42 filières professionnelles, 92% d'insertion, un campus moderne à Dakar.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1200">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a1f44'/%3E%3Cpath d='M50 18 L15 36 L15 42 L85 42 L85 36 Z' fill='%2360a5fa'/%3E%3Crect x='18' y='46' width='64' height='5' fill='%2360a5fa'/%3E%3Crect x='23' y='54' width='7' height='28' fill='%2360a5fa'/%3E%3Crect x='40' y='54' width='7' height='28' fill='%2360a5fa'/%3E%3Crect x='53' y='54' width='7' height='28' fill='%2360a5fa'/%3E%3Crect x='70' y='54' width='7' height='28' fill='%2360a5fa'/%3E%3Crect x='14' y='83' width='72' height='6' fill='%2360a5fa'/%3E%3C/svg%3E">
+
+<style>
+:root{
+  --ink:#0a1f44;
+  --ink2:#153a75;
+  --green:#2563eb;
+  --green-l:#3b82f6;
+  --gold:#60a5fa;
+  --gold-l:#93c5fd;
+  --sun:#3b82f6;
+  --sky:#eff6ff;
+  --white:#fff;
+  --text:#1e3a5f;
+  --muted:#64748b;
+  --line:#dbeafe;
+  --shadow-sm:0 2px 8px rgba(10,31,68,.06);
+  --shadow-md:0 12px 32px rgba(10,31,68,.10);
+  --shadow-lg:0 24px 60px rgba(10,31,68,.16);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'DM Sans',system-ui,-apple-system,sans-serif;color:var(--text);background:var(--white);line-height:1.7;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden}
+img,.img{display:block}
+.img{background-size:cover;background-position:center;background-color:var(--ink2)}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:2px}
+h1,h2,h3,h4{font-family:'DM Sans',system-ui,sans-serif;color:var(--ink);line-height:1.15;font-weight:700;letter-spacing:-.6px}
+h2{font-size:clamp(1.9rem,3.8vw,2.8rem);margin-bottom:1rem}
+h3{font-size:1.3rem;margin-bottom:.5rem;font-weight:600;letter-spacing:-.3px}
+.wrap{max-width:1200px;margin:auto;padding:0 28px}
+section{padding:120px 0;position:relative}
+.lead{max-width:660px;color:var(--muted);font-size:1.06rem;line-height:1.75}
+.eyebrow{display:inline-block;color:var(--green);font-weight:700;font-size:.78rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:14px}
+
+.btn{display:inline-flex;align-items:center;gap:8px;padding:16px 32px;border-radius:4px;font-weight:600;font-size:.95rem;transition:all .3s cubic-bezier(.2,.8,.2,1);border:1.5px solid transparent;cursor:pointer;font-family:inherit;letter-spacing:.2px}
+.btn.gold{background:var(--gold);color:var(--ink)}
+.btn.gold:hover{background:var(--gold-l);transform:translateY(-2px);box-shadow:0 12px 28px rgba(96,165,250,.4)}
+.btn.green{background:var(--green);color:#fff}
+.btn.green:hover{background:var(--green-l);transform:translateY(-2px);box-shadow:0 12px 28px rgba(37,99,235,.35)}
+.btn.line{border-color:rgba(255,255,255,.55);color:#fff;backdrop-filter:blur(8px);background:rgba(255,255,255,.06)}
+.btn.line:hover{background:#fff;color:var(--ink);border-color:#fff}
+.btn.dark{background:var(--ink);color:#fff}
+.btn.dark:hover{background:var(--ink2);transform:translateY(-2px);box-shadow:0 12px 28px rgba(10,31,68,.28)}
+.btn.ghost{border-color:var(--line);color:var(--ink);background:#fff}
+.btn.ghost:hover{border-color:var(--green);color:var(--green)}
+
+/* ============ EN-TÊTE ============ */
+header{position:fixed;inset:0 0 auto 0;z-index:100;transition:all .4s cubic-bezier(.2,.8,.2,1);color:#fff;padding:0}
+header.solid,header.menu-open{
+  background:rgba(10,31,68,.97);
+  backdrop-filter:blur(14px) saturate(180%);
+  -webkit-backdrop-filter:blur(14px) saturate(180%);
+}
+.bar{display:flex;align-items:center;justify-content:space-between;height:92px;transition:height .3s;gap:24px}
+header.solid .bar{height:78px}
+header.menu-open .bar{height:78px}
+
+.logo{display:flex;align-items:center;gap:14px;font-size:1.15rem;font-weight:700;letter-spacing:-.3px;line-height:1.1;flex-shrink:0}
+.logo .mark{
+  width:48px;height:48px;border-radius:14px;
+  background:linear-gradient(135deg,var(--gold),var(--sun));
+  display:grid;place-items:center;
+  color:var(--ink);
+  box-shadow:0 6px 18px rgba(96,165,250,.4);
+  flex-shrink:0;
+  transition:transform .4s cubic-bezier(.2,.8,.2,1), box-shadow .3s;
+}
+.logo:hover .mark{transform:rotate(-6deg) scale(1.06);box-shadow:0 10px 24px rgba(96,165,250,.55)}
+.logo .mark svg{width:28px;height:28px;display:block}
+.logo small{display:block;font-size:.66rem;font-weight:500;opacity:.7;letter-spacing:.8px;text-transform:uppercase;line-height:1.2;margin-top:2px}
+
+/* ============ NAVIGATION DESKTOP ============ */
+.desktop-nav > ul{display:flex;gap:6px;list-style:none;font-size:.9rem;font-weight:500;align-items:center}
+.desktop-nav > ul > li{position:relative}
+
+.nav-item > a{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:10px 14px;border-radius:8px;
+  opacity:.88;
+  transition:opacity .25s, background .25s, color .25s;
+  position:relative;
+  white-space:nowrap;
+  font-weight:500;
+}
+.nav-item:hover > a,
+.nav-item.active > a{opacity:1;background:rgba(96,165,250,.08)}
+
+.caret{width:12px;height:12px;transition:transform .35s cubic-bezier(.2,.8,.2,1);flex-shrink:0}
+.nav-item:hover .caret{transform:rotate(180deg)}
+
+/* --- Panneau déroulant --- */
+.dropdown-panel{
+  position:absolute;
+  top:100%;
+  left:50%;
+  transform:translateX(-50%) translateY(14px);
+  padding-top:14px;
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transition:opacity .35s cubic-bezier(.2,.8,.2,1),
+             transform .35s cubic-bezier(.2,.8,.2,1),
+             visibility .35s;
+  z-index:1000;
+}
+.nav-item:hover .dropdown-panel,
+.nav-item:focus-within .dropdown-panel{
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+  transform:translateX(-50%) translateY(0);
+}
+.dropdown-panel::before{
+  content:"";
+  position:absolute;
+  top:0;left:0;right:0;height:14px;
+}
+
+.dropdown-inner{
+  min-width:340px;
+  background:#fff;
+  border-radius:16px;
+  box-shadow:
+    0 24px 60px rgba(10,31,68,.18),
+    0 4px 14px rgba(10,31,68,.08),
+    0 0 0 1px rgba(10,31,68,.04);
+  padding:14px;
+  position:relative;
+  overflow:hidden;
+}
+.dropdown-inner::before{
+  content:"";
+  position:absolute;
+  top:-8px;
+  left:50%;
+  transform:translateX(-50%) rotate(45deg);
+  width:16px;height:16px;
+  background:#fff;
+  border-radius:3px;
+  box-shadow:-2px -2px 4px rgba(10,31,68,.03);
+}
+.dropdown-inner > ul{
+  list-style:none;
+  padding:0;margin:0;
+  display:block;
+  gap:0;
+}
+.dropdown-inner > ul > li{
+  opacity:0;
+  transform:translateY(-8px);
+  transition:opacity .45s cubic-bezier(.2,.8,.2,1),
+             transform .45s cubic-bezier(.2,.8,.2,1);
+}
+.nav-item:hover .dropdown-inner > ul > li,
+.nav-item:focus-within .dropdown-inner > ul > li{
+  opacity:1;
+  transform:translateY(0);
+}
+.nav-item:hover .dropdown-inner > ul > li:nth-child(1){transition-delay:.04s}
+.nav-item:hover .dropdown-inner > ul > li:nth-child(2){transition-delay:.08s}
+.nav-item:hover .dropdown-inner > ul > li:nth-child(3){transition-delay:.12s}
+.nav-item:hover .dropdown-inner > ul > li:nth-child(4){transition-delay:.16s}
+.nav-item:hover .dropdown-inner > ul > li:nth-child(5){transition-delay:.20s}
+.nav-item:hover .dropdown-inner > ul > li:nth-child(6){transition-delay:.24s}
+.nav-item:hover .dropdown-inner > ul > li:nth-child(7){transition-delay:.28s}
+
+.dropdown-inner a{
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+  padding:11px 12px;
+  border-radius:10px;
+  transition:background .25s cubic-bezier(.2,.8,.2,1),
+             transform .3s cubic-bezier(.2,.8,.2,1);
+  color:var(--text);
+  text-decoration:none;
+  position:relative;
+}
+.dropdown-inner a:hover{
+  background:var(--sky);
+  transform:translateX(4px);
+}
+
+.dd-icon{
+  flex-shrink:0;
+  width:38px;height:38px;
+  border-radius:10px;
+  background:linear-gradient(135deg,var(--green),var(--green-l));
+  color:#fff;
+  display:grid;place-items:center;
+  transition:transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .3s;
+  box-shadow:0 4px 10px rgba(37,99,235,.2);
+}
+.dropdown-inner a:hover .dd-icon{
+  transform:scale(1.08) rotate(-4deg);
+  box-shadow:0 8px 16px rgba(37,99,235,.35);
+}
+.dd-icon svg{width:18px;height:18px}
+
+.dd-txt{display:flex;flex-direction:column;gap:3px;min-width:0;padding-top:1px}
+.dd-txt b{
+  font-size:.9rem;
+  font-weight:600;
+  color:var(--ink);
+  line-height:1.25;
+  letter-spacing:-.15px;
+}
+.dd-txt span{
+  font-size:.76rem;
+  color:var(--muted);
+  line-height:1.4;
+  font-weight:400;
+}
+
+/* ============ MENU MOBILE ============ */
+.mobile-menu{
+  background:var(--ink);
+  max-height:0;
+  overflow:hidden;
+  transition:max-height .5s cubic-bezier(.2,.8,.2,1);
+}
+.mobile-menu.open{max-height:calc(100vh - 78px);overflow-y:auto}
+.mobile-menu > a,
+.mobile-menu > button{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  width:100%;
+  text-align:left;
+  padding:15px 28px;
+  font-size:.95rem;
+  color:#fff;
+  background:none;
+  border:none;
+  border-bottom:1px solid rgba(255,255,255,.06);
+  cursor:pointer;
+  font-family:inherit;
+  font-weight:500;
+  transition:background .25s, padding-left .3s;
+  text-decoration:none;
+}
+.mobile-menu > a:hover,
+.mobile-menu > button:hover{background:rgba(96,165,250,.08);padding-left:32px}
+.mobile-menu > button svg{
+  width:16px;height:16px;
+  transition:transform .35s cubic-bezier(.2,.8,.2,1);
+  flex-shrink:0;
+}
+.mobile-menu > button.open svg{transform:rotate(180deg)}
+
+.mobile-submenu{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height .45s cubic-bezier(.2,.8,.2,1);
+  background:rgba(0,0,0,.18);
+}
+.mobile-submenu.open{max-height:600px}
+.mobile-submenu a{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:12px 28px 12px 46px;
+  font-size:.86rem;
+  color:rgba(255,255,255,.72);
+  border-bottom:1px solid rgba(255,255,255,.04);
+  text-decoration:none;
+  transition:padding-left .3s, color .25s, background .25s;
+}
+.mobile-submenu a::before{
+  content:"";
+  width:4px;height:4px;border-radius:50%;
+  background:var(--gold);
+  flex-shrink:0;
+  transition:transform .3s;
+}
+.mobile-submenu a:hover{
+  color:#fff;
+  padding-left:52px;
+  background:rgba(96,165,250,.06);
+}
+
+.burger{display:none;background:none;border:0;color:#fff;font-size:1.7rem;cursor:pointer;padding:8px;transition:transform .3s}
+.burger:hover{transform:scale(1.1)}
+.btn-header{padding:11px 22px;font-size:.85rem;flex-shrink:0}
+
+/* ============ HERO ============ */
+.hero{position:relative;height:100vh;min-height:680px;overflow:hidden;background:var(--ink);color:#fff;padding:0}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity 1.8s cubic-bezier(.45,0,.2,1);z-index:1;will-change:opacity}
+.slide.on{opacity:1;z-index:2}
+.slide .bg{position:absolute;inset:0;transform:scale(1);transition:transform 0s 1.9s;background-size:cover;background-position:center;background-color:var(--ink2)}
+.slide.on .bg{transform:scale(1.08);transition:transform 9s cubic-bezier(.2,.6,.3,1)}
+.slide::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(95deg,rgba(5,15,46,.92) 0%,rgba(5,15,46,.6) 45%,rgba(5,15,46,.15) 100%),
+  linear-gradient(0deg,rgba(5,15,46,.7),transparent 40%)}
+.cap{position:absolute;z-index:3;left:max(28px,calc((100vw - 1200px)/2 + 28px));right:28px;bottom:22vh;max-width:760px}
+.cap>*{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
+.slide.on .cap>*{opacity:1;transform:none}
+.slide.on .cap>:nth-child(1){transition-delay:.6s}
+.slide.on .cap>:nth-child(2){transition-delay:.85s}
+.slide.on .cap>:nth-child(3){transition-delay:1.1s}
+.slide.on .cap>:nth-child(4){transition-delay:1.35s}
+.cap .tag{display:inline-flex;align-items:center;gap:8px;background:rgba(96,165,250,.15);color:var(--gold);border:1px solid rgba(96,165,250,.45);padding:8px 18px;border-radius:40px;font-size:.78rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:26px;backdrop-filter:blur(8px)}
+.cap .tag::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold)}
+.cap h1{color:#fff;font-size:clamp(2.2rem,5.5vw,4.6rem);margin-bottom:22px;line-height:1.02;letter-spacing:-1.5px;font-weight:700}
+.cap p{font-size:clamp(1rem,1.3vw,1.18rem);opacity:.9;margin-bottom:36px;max-width:580px;line-height:1.65}
+.cap .btn+.btn{margin-left:12px}
+
+.ctrl{position:absolute;z-index:5;left:0;right:0;bottom:48px}
+.ctrl .wrap{display:flex;align-items:center;justify-content:space-between}
+.dots{display:flex;gap:10px}
+.dots button{width:48px;height:3px;border:0;background:rgba(255,255,255,.3);position:relative;overflow:hidden;cursor:pointer;border-radius:2px;transition:.3s}
+.dots button:hover{background:rgba(255,255,255,.5)}
+.dots button.on::after{content:"";position:absolute;inset:0;background:var(--gold);transform-origin:left;animation:fill var(--d,7s) linear forwards}
+@keyframes fill{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.arrows{display:flex;gap:10px}
+.arrows button{width:50px;height:50px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.06);color:#fff;font-size:1.2rem;cursor:pointer;transition:.3s;backdrop-filter:blur(10px);display:grid;place-items:center;line-height:1}
+.arrows button:hover{background:var(--gold);border-color:var(--gold);color:var(--ink);transform:scale(1.08)}
+
+.scroll-hint{position:absolute;bottom:120px;right:max(28px,calc((100vw - 1200px)/2 + 28px));z-index:4;display:flex;flex-direction:column;align-items:center;gap:10px;color:#fff;font-size:.7rem;letter-spacing:2px;text-transform:uppercase;opacity:.7}
+.scroll-hint span{writing-mode:vertical-rl}
+.scroll-hint::after{content:"";width:1px;height:60px;background:linear-gradient(to bottom,#fff,transparent);animation:scrollLine 2.2s ease-in-out infinite}
+@keyframes scrollLine{0%,100%{transform:scaleY(.3);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}}
+
+/* ============ PARTENAIRES ============ */
+.partners{background:var(--sky);padding:44px 0;border-bottom:0;overflow:hidden}
+.partners p{text-align:center;font-size:.78rem;color:var(--muted);letter-spacing:2.5px;text-transform:uppercase;font-weight:600;margin-bottom:26px}
+.partners-track{display:flex;gap:60px;align-items:center;justify-content:center;flex-wrap:wrap}
+.partner{font-size:1.05rem;font-weight:700;color:var(--ink);opacity:.45;letter-spacing:-.3px;transition:.3s;white-space:nowrap}
+.partner:hover{opacity:.9}
+
+/* ============ CHIFFRES ============ */
+.stats{background:var(--ink);color:#fff;padding:160px 0 80px;position:relative;overflow:hidden}
+.stats .wave{position:absolute;top:-1px;left:0;width:100%;height:100px;display:block;line-height:0;pointer-events:none;z-index:1}
+.stats::before{content:"";position:absolute;top:-100px;right:-100px;width:500px;height:500px;background:radial-gradient(circle,rgba(96,165,250,.14) 0%,transparent 70%);pointer-events:none}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;text-align:center;position:relative;z-index:2}
+.stats b{display:block;font-size:3.2rem;color:var(--gold);line-height:1;font-weight:700;letter-spacing:-2px;margin-bottom:10px}
+.stats span{font-size:.9rem;opacity:.85;display:block;line-height:1.5}
+
+/* ============ À PROPOS ============ */
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}
+.about .pic{position:relative}
+.about .pic .img{height:600px;border-radius:8px;box-shadow:var(--shadow-lg)}
+.about .pic::before{content:"";position:absolute;inset:32px -32px -32px 32px;border:2px solid var(--gold);z-index:-1;border-radius:8px;opacity:.7}
+.about p{margin-bottom:20px;line-height:1.8}
+.about p strong{color:var(--ink);font-weight:600}
+.vals{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:32px 0 40px}
+.vals div{border-left:3px solid var(--green);padding-left:18px}
+.vals b{color:var(--ink);display:block;font-weight:700;margin-bottom:4px;font-size:.98rem}
+.vals span{font-size:.88rem;color:var(--muted);line-height:1.5}
+
+/* ============ SECTEURS ============ */
+.sectors{background:var(--sky)}
+.head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:60px;flex-wrap:wrap}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.card{background:#fff;overflow:hidden;transition:.45s cubic-bezier(.2,.8,.2,1);border-radius:8px;box-shadow:var(--shadow-sm);position:relative}
+.card:hover{transform:translateY(-10px);box-shadow:var(--shadow-lg)}
+.card .img{height:240px;transition:transform 1s cubic-bezier(.2,.8,.2,1);overflow:hidden;position:relative}
+.card:hover .img{transform:scale(1.08)}
+.card .img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(10,31,68,.55));pointer-events:none}
+.card .in{padding:30px 28px 32px}
+.card .tag{display:inline-block;color:var(--green);font-weight:700;font-size:.72rem;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px}
+.card p{font-size:.94rem;color:var(--muted);line-height:1.65}
+
+/* ============ PROJETS ============ */
+.projects .wrap{display:grid;grid-template-columns:1fr 1.4fr;gap:80px;align-items:start}
+.proj-list{display:grid;gap:16px}
+.proj{display:flex;gap:22px;padding:28px;background:#fff;border:1px solid var(--line);border-radius:8px;transition:.35s cubic-bezier(.2,.8,.2,1)}
+.proj:hover{border-color:var(--green);box-shadow:var(--shadow-md);transform:translateX(8px)!important}
+.proj .num{flex-shrink:0;width:52px;height:52px;border-radius:50%;background:var(--sky);color:var(--green);display:grid;place-items:center;font-weight:700;font-size:1rem;transition:.35s;letter-spacing:0}
+.proj:hover .num{background:var(--green);color:#fff}
+.proj b{display:block;color:var(--ink);font-size:1.02rem;margin-bottom:6px;font-weight:700;line-height:1.35}
+.proj span{font-size:.9rem;color:var(--muted);line-height:1.6}
+
+/* ============ OBJECTIF 2030 ============ */
+.goal{background:linear-gradient(120deg,var(--ink) 0%,var(--ink2) 60%,#1e40af 100%);color:#fff;padding:120px 0;position:relative;overflow:hidden}
+.goal::before{content:"";position:absolute;top:-300px;right:-300px;width:800px;height:800px;border-radius:50%;background:radial-gradient(circle,rgba(96,165,250,.18) 0%,transparent 65%);pointer-events:none}
+.goal::after{content:"";position:absolute;bottom:-200px;left:-200px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(59,130,246,.16) 0%,transparent 70%);pointer-events:none}
+.goal .wrap{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center;position:relative;z-index:2}
+.goal h2{color:#fff}
+.goal p{color:#c7d7ef;font-size:1.05rem;margin-bottom:20px;line-height:1.75}
+.goal ul{list-style:none;margin-top:28px}
+.goal li{padding:14px 0;padding-left:36px;position:relative;color:#dbe6f7;border-bottom:1px solid rgba(255,255,255,.08);font-size:.98rem}
+.goal li:last-child{border-bottom:0}
+.goal li::before{content:"✓";position:absolute;left:0;top:14px;width:22px;height:22px;background:var(--gold);color:var(--ink);border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:.75rem}
+.goal .big-wrap{text-align:center}
+.goal .big{font-size:clamp(4.5rem,11vw,8rem);font-weight:700;color:var(--gold);line-height:.85;letter-spacing:-6px;display:block}
+.goal .big small{font-size:.28em;display:block;color:#fff;letter-spacing:0;font-weight:500;margin-top:24px;line-height:1.45}
+.goal .progress{margin-top:40px;background:rgba(255,255,255,.08);border-radius:40px;height:8px;overflow:hidden;position:relative}
+.goal .progress::after{content:"";position:absolute;inset:0;width:40%;background:linear-gradient(90deg,var(--gold),var(--sun));border-radius:40px}
+
+/* ============ ACTUALITÉS ============ */
+.news{background:var(--sky)}
+.nw{display:grid;grid-template-columns:1.4fr 1fr;gap:28px}
+.nw article{display:flex;flex-direction:column;background:#fff;border-radius:8px;overflow:hidden;transition:.4s cubic-bezier(.2,.8,.2,1);box-shadow:var(--shadow-sm);cursor:pointer}
+.nw article:hover{box-shadow:var(--shadow-lg);transform:translateY(-6px)}
+.nw .img{height:260px;transition:transform .9s}
+.nw article:hover .img{transform:scale(1.05)}
+.nw .img-wrap{overflow:hidden}
+.nw .big .img{height:380px}
+.nw .in{padding:30px 28px 32px;flex:1;display:flex;flex-direction:column}
+.nw time{color:var(--green);font-size:.78rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:10px;display:block}
+.nw h3{margin-bottom:10px;font-size:1.3rem;line-height:1.3}
+.nw .big h3{font-size:1.6rem}
+.nw p{font-size:.92rem;color:var(--muted);line-height:1.6;flex:1}
+.nw .read{color:var(--green);font-weight:600;font-size:.85rem;margin-top:16px;display:inline-flex;align-items:center;gap:6px;transition:gap .3s}
+.nw article:hover .read{gap:12px}
+.nw .col{display:grid;gap:28px}
+
+/* ============ GALERIE ============ */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:250px;gap:14px;margin-top:52px}
+.gal .img{overflow:hidden;transition:.6s cubic-bezier(.2,.8,.2,1);border-radius:8px;filter:saturate(1.02);cursor:pointer;position:relative}
+.gal .img:nth-child(1){grid-column:span 2;grid-row:span 2}
+.gal .img:nth-child(4){grid-column:span 2}
+.gal .img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(10,31,68,.4));opacity:0;transition:.4s}
+.gal .img:hover{filter:saturate(1.15) brightness(1.06);transform:scale(1.015)!important}
+.gal .img:hover::after{opacity:1}
+
+/* ============ TÉMOIGNAGES ============ */
+.tem .qs{display:grid;grid-template-columns:repeat(3,1fr);gap:44px;margin-top:52px}
+blockquote{font-size:1.12rem;line-height:1.6;color:var(--ink);padding-top:26px;border-top:3px solid var(--gold);font-weight:500;position:relative}
+blockquote::before{content:"\201C";position:absolute;top:-10px;left:0;font-size:4rem;color:var(--gold);opacity:.25;font-family:Georgia,serif;line-height:1}
+cite{display:block;margin-top:20px;font-style:normal;font-size:.85rem;color:var(--muted);font-weight:500}
+cite::before{content:"— ";color:var(--gold)}
+
+/* ============ CTA BAND ============ */
+.cta-band{background:linear-gradient(120deg,var(--gold) 0%,var(--sun) 100%);padding:70px 0;text-align:center;color:var(--ink);position:relative;z-index:2}
+.cta-band h2{color:var(--ink);margin-bottom:14px;font-size:clamp(1.6rem,3vw,2.2rem)}
+.cta-band p{max-width:600px;margin:0 auto 30px;color:rgba(10,31,68,.78);font-size:1.05rem}
+.cta-band .btn{background:var(--ink);color:#fff}
+.cta-band .btn:hover{background:var(--ink2);transform:translateY(-3px);box-shadow:0 16px 40px rgba(10,31,68,.3)}
+
+/* ============ CONTACT ============ */
+.ct{background:var(--ink);color:#fff;padding:180px 0 120px;position:relative;overflow:hidden}
+.ct .wave{position:absolute;top:-1px;left:0;width:100%;height:100px;display:block;line-height:0;pointer-events:none;z-index:1}
+.ct h2{color:#fff}
+.ct .wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:80px;position:relative;z-index:2}
+.ct p{color:#c7d7ef}
+.ct ul{list-style:none;margin-top:34px}
+.ct li{padding:16px 0;border-bottom:1px solid rgba(255,255,255,.12);color:#c7d7ef;font-size:.96rem}
+.ct li b{color:var(--gold);display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;font-weight:700}
+form{display:grid;gap:16px}
+form .r{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+input,select,textarea{width:100%;padding:16px 18px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.05);color:#fff;font:inherit;border-radius:4px;transition:.3s;font-size:.95rem}
+select option{color:#000}
+input::placeholder,textarea::placeholder{color:#8fa8c9}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold);background:rgba(255,255,255,.09);box-shadow:0 0 0 4px rgba(96,165,250,.15)}
+textarea{resize:vertical;min-height:120px;font-family:inherit}
+#ok{display:none;color:var(--gold);font-weight:600;padding:14px 18px;background:rgba(96,165,250,.12);border:1px solid rgba(96,165,250,.4);border-radius:4px;margin-top:8px}
+
+/* ============ FOOTER ============ */
+footer{background:#050f2e;color:#8ba0c0;padding:70px 0 30px;font-size:.88rem}
+footer .grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:50px;margin-bottom:50px}
+footer h4{color:#fff;font-size:.8rem;text-transform:uppercase;letter-spacing:2px;margin-bottom:22px;font-weight:700}
+footer ul{list-style:none;display:grid;gap:12px}
+footer a{transition:.25s;font-size:.88rem}
+footer a:hover{color:var(--gold)}
+footer .brand{display:flex;align-items:center;gap:14px;margin-bottom:22px}
+footer .brand .mark{
+  width:46px;height:46px;border-radius:12px;
+  background:linear-gradient(135deg,var(--gold),var(--sun));
+  display:grid;place-items:center;color:var(--ink);
+}
+footer .brand .mark svg{width:26px;height:26px}
+footer .brand b{color:#fff;font-size:1.1rem;display:block;line-height:1.2}
+footer .brand small{color:#8ba0c0;font-size:.72rem;letter-spacing:.5px;font-weight:400}
+footer .bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:28px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:.82rem}
+footer .bottom a{display:inline-block;margin-left:22px}
+
+/* ============ ANIMATIONS ============ */
+.rv{opacity:0;transform:translateY(50px);transition:opacity 1s cubic-bezier(.2,.8,.2,1),transform 1s cubic-bezier(.2,.8,.2,1);will-change:opacity,transform}
+.rv.in{opacity:1;transform:none}
+.rv.delay-1{transition-delay:.1s}
+.rv.delay-2{transition-delay:.2s}
+.rv.delay-3{transition-delay:.3s}
+
+.card,.proj,.nw article,.gal .img,blockquote,.stat-item{
+  opacity:0;transform:translateY(60px) scale(.97);
+  transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1),box-shadow .45s cubic-bezier(.2,.8,.2,1);
+  will-change:opacity,transform;
+}
+.card.in,.proj.in,.nw article.in,.gal .img.in,blockquote.in,.stat-item.in{opacity:1;transform:none}
+
+.grid3 .card:nth-child(3n+1){transform:translate(-60px,40px) scale(.97)}
+.grid3 .card:nth-child(3n+2){transform:translate(0,70px) scale(.97)}
+.grid3 .card:nth-child(3n+3){transform:translate(60px,40px) scale(.97)}
+.grid3 .card.in{transform:none}
+.proj:nth-child(odd){transform:translateX(-70px) scale(.98)}
+.proj:nth-child(even){transform:translateX(70px) scale(.98)}
+.proj.in{transform:none}
+.nw .big{transform:translateY(80px) scale(.97)}
+.nw .col article{transform:translateX(70px)}
+.nw .big.in,.nw .col article.in{transform:none}
+.gal .img:nth-child(odd){transform:translateY(80px) scale(.94)}
+.gal .img:nth-child(even){transform:translateY(80px) scale(.94) rotate(-1deg)}
+.gal .img.in{transform:none}
+.stat-item{transform:translateY(50px)}
+.stat-item.in{transform:none}
+
+.type{display:inline-block;overflow:hidden;white-space:nowrap;border-right:3px solid var(--gold);padding-right:4px;max-width:0}
+.type.typing{animation:typing 1.4s steps(40, end) forwards,blink .8s step-end infinite}
+.type.done{border-right-color:transparent;max-width:100%;animation:none}
+@keyframes typing{from{max-width:0}to{max-width:100%}}
+@keyframes blink{50%{border-right-color:transparent}100%{border-right-color:var(--gold)}}
+.goal .big .type,.goal .big.type{border-right-color:var(--gold)}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .rv,.card,.proj,.nw article,.gal .img,blockquote,.stat-item,.cap>*{opacity:1!important;transform:none!important}
+  .type{max-width:100%;border-right:0}
+}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:1100px){
+  .desktop-nav > ul{gap:2px}
+  .nav-item > a{padding:10px 10px;font-size:.85rem}
+}
+@media(max-width:1024px){
+  .grid3{grid-template-columns:1fr 1fr}
+  footer .grid{grid-template-columns:1fr 1fr;gap:40px}
+  .grid3 .card:nth-child(3n+1),
+  .grid3 .card:nth-child(3n+2),
+  .grid3 .card:nth-child(3n+3){transform:translateY(60px) scale(.97)}
+}
+@media(max-width:960px){
+  .desktop-nav{display:none}
+  .burger{display:block}
+  .btn-header{display:none}
+  section{padding:80px 0}
+  .bar{height:78px}
+  header.solid .bar{height:70px}
+  header.menu-open .bar{height:70px}
+
+  .about .wrap,.projects .wrap,.goal .wrap,.ct .wrap,.nw{grid-template-columns:1fr;gap:50px}
+  .gal{grid-template-columns:1fr 1fr;grid-auto-rows:200px}
+  .gal .img:nth-child(1){grid-column:span 2;grid-row:span 1}
+  .gal .img:nth-child(4){grid-column:span 1}
+  .stats .wrap{grid-template-columns:1fr 1fr;gap:30px}
+  .stats{padding:130px 0 60px}
+  .stats .wave{height:75px}
+  .ct{padding:140px 0 80px}
+  .ct .wave{height:75px}
+  .tem .qs{grid-template-columns:1fr;gap:30px}
+  .about .pic .img{height:420px}
+  .about .pic::before{inset:18px -12px -18px 18px}
+  .cap{bottom:20vh}
+  .arrows{display:none}
+  .scroll-hint{display:none}
+  .goal .big{letter-spacing:-4px}
+  h2{font-size:clamp(1.7rem,5vw,2.4rem)}
+  .proj:nth-child(odd),
+  .proj:nth-child(even),
+  .nw .big,
+  .nw .col article{transform:translateY(60px)}
+  .mobile-menu{max-height:0;transition:max-height .5s cubic-bezier(.2,.8,.2,1)}
+  .mobile-menu.open{max-height:calc(100vh - 78px)}
+}
+@media(max-width:560px){
+  .wrap{padding:0 20px}
+  section{padding:64px 0}
+  .grid3{grid-template-columns:1fr}
+  .vals,form .r{grid-template-columns:1fr}
+  .cap .btn+.btn{margin:12px 0 0;display:block}
+  .cap h1{letter-spacing:-1px}
+  .goal .big{letter-spacing:-3px}
+  .gal{grid-template-columns:1fr;grid-auto-rows:220px}
+  .gal .img:nth-child(1){grid-column:span 1;grid-row:span 1}
+  .stats b{font-size:2.6rem}
+  .stats{padding:115px 0 50px}
+  .stats .wave{height:60px}
+  .ct{padding:120px 0 60px}
+  .ct .wave{height:60px}
+  footer .grid{grid-template-columns:1fr;gap:34px}
+  footer .bottom{flex-direction:column;text-align:center}
+  footer .bottom a{margin:0 8px}
+  .logo .mark{width:42px;height:42px;border-radius:12px}
+  .logo .mark svg{width:24px;height:24px}
+}
+</style>
+</head>
+<body>
+
+<!-- ==================== HEADER ==================== -->
+<header id="hd">
+  <div class="wrap bar">
+
+    <!-- LOGO avec temple -->
+    <a href="#accueil" class="logo" aria-label="ISTP – Accueil">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2 L1 8 L1 9.6 L23 9.6 L23 8 Z"/>
+          <rect x="2" y="10.2" width="20" height="1.8"/>
+          <rect x="4" y="12.4" width="2" height="7.4"/>
+          <rect x="8.5" y="12.4" width="2" height="7.4"/>
+          <rect x="13.5" y="12.4" width="2" height="7.4"/>
+          <rect x="18" y="12.4" width="2" height="7.4"/>
+          <rect x="2" y="20.2" width="20" height="1.8"/>
+        </svg>
+      </span>
+      <span>ISTP<small>Institut Professionnel</small></span>
+    </a>
+
+    <button class="burger" id="bg" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+
+    <!-- NAV DESKTOP avec dropdowns -->
+    <nav id="nv" class="desktop-nav" aria-label="Navigation principale">
+      <ul>
+
+        <!-- L'UNIVERSITÉ -->
+        <li class="nav-item">
+          <a href="#apropos">L'Université
+            <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-panel">
+            <div class="dropdown-inner">
+              <ul>
+                <li><a href="pages/apropos.html">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+                  <span class="dd-txt"><b>Qui sommes-nous ?</b><span>Histoire, identité et vocation de l'institut.</span></span>
+                </a></li>
+                <li><a href="pages/mot-du-dg.html">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M21 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"/></svg></span>
+                  <span class="dd-txt"><b>Mot du Directeur</b><span>Vision et engagement de la direction.</span></span>
+                </a></li>
+                <li><a href="pages/mission.html">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>
+                  <span class="dd-txt"><b>Notre mission</b><span>Objectifs, engagements et priorités stratégiques.</span></span>
+                </a></li>
+                <li><a href="pages/equipe.html">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></span>
+                  <span class="dd-txt"><b>Notre équipe</b><span>Direction, pôles et encadrement pédagogique.</span></span>
+                </a></li>
+                <li><a href="pages/valeurs.html">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-8-4.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 6.5-8 11-8 11z"/></svg></span>
+                  <span class="dd-txt"><b>Nos valeurs</b><span>Excellence, rigueur, pratique et proximité.</span></span>
+                </a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <!-- FORMATIONS -->
+        <li class="nav-item">
+          <a href="#secteurs">Formations
+            <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-panel">
+            <div class="dropdown-inner">
+              <ul>
+                <li><a href="pages/gestion-finance.html">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+                  <span class="dd-txt"><b>Gestion, Commerce &amp; Finance</b><span>Comptabilité, audit, banque, marketing.</span></span>
+                </a></li>
+                <li><a href="pages/informatique-digital.html">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+                  <span class="dd-txt"><b>Informatique &amp; Numérique</b><span>Dev web, réseaux, data, cybersécurité.</span></span>
+                </a></li>
+                <li><a href="pages/genie-civil.html">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg></span>
+                  <span class="dd-txt"><b>Génie civil &amp; Industriel</b><span>BTP, génie électrique et mécanique.</span></span>
+                </a></li>
+                <li><a href="pages/sante-sciences.html">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9-6-18-3 9H2"/></svg></span>
+                  <span class="dd-txt"><b>Santé &amp; Sciences de la Vie</b><span>Soins, biologie, pharmacie, santé publique.</span></span>
+                </a></li>
+                <li><a href="pages/communication-marketing.html">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v3a1 1 0 0 0 1 1h3l5 4V7L7 10H4a1 1 0 0 0-1 1z"/><path d="M16 8a5 5 0 0 1 0 8"/></svg></span>
+                  <span class="dd-txt"><b>Communication &amp; Marketing</b><span>Journalisme, marketing digital, médias.</span></span>
+                </a></li>
+                <li><a href="pages/droit-sciences-sociales.html">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 6h18M6 6l-3 8a4 4 0 0 0 6 0zM18 6l-3 8a4 4 0 0 0 6 0z"/></svg></span>
+                  <span class="dd-txt"><b>Droit, RH &amp; Sciences Sociales</b><span>Droit des affaires, RH, gestion publique.</span></span>
+                </a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <!-- PROGRAMMES -->
+        <li class="nav-item">
+          <a href="#projets">Programmes
+            <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-panel">
+            <div class="dropdown-inner">
+              <ul>
+                <li><a href="pages/licence-pro.html">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg></span>
+                  <span class="dd-txt"><b>Licence Professionnelle</b><span>Bac +3, formation initiale ou alternance.</span></span>
+                </a></li>
+                <li><a href="pages/master-pro.html">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7l10 6 10-6-10-6L2 7z"/><path d="M6 10v6c0 1.5 3 3 6 3s6-1.5 6-3v-6"/><path d="M22 7v8"/></svg></span>
+                  <span class="dd-txt"><b>Master Professionnel</b><span>Bac +5, expertise et recherche appliquée.</span></span>
+                </a></li>
+                <li><a href="pages/bts-dut.html">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 12l2 2 4-4"/></svg></span>
+                  <span class="dd-txt"><b>BTS &amp; DUT</b><span>Parcours courts de 2 ans, opérationnels.</span></span>
+                </a></li>
+                <li><a href="pages/formation-continue.html">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 0 1 2-2h13v16"/><path d="M20 22H6a2 2 0 0 1 0-4h14z"/></svg></span>
+                  <span class="dd-txt"><b>Formation Continue</b><span>Modules courts pour professionnels en activité.</span></span>
+                </a></li>
+                <li><a href="pages/certifications.html">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M8.5 13.5L7 22l5-3 5 3-1.5-8.5"/></svg></span>
+                  <span class="dd-txt"><b>Certifications</b><span>Diplômes reconnus et validés par examens.</span></span>
+                </a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <!-- VISION 2030 -->
+        <li class="nav-item">
+          <a href="#objectif">Vision 2030
+            <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-panel">
+            <div class="dropdown-inner">
+              <ul>
+                <li><a href="pages/vision-2030.html">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></span>
+                  <span class="dd-txt"><b>Notre vision</b><span>Devenir une référence africaine en 2030.</span></span>
+                </a></li>
+                <li><a href="pages/objectifs-strategiques.html">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>
+                  <span class="dd-txt"><b>Objectifs stratégiques</b><span>20 000 étudiants, 100% accrédités.</span></span>
+                </a></li>
+                <li><a href="pages/accreditations.html">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+                  <span class="dd-txt"><b>Accréditations</b><span>Reconnaissance nationale et internationale.</span></span>
+                </a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <!-- ACTUALITÉS -->
+        <li class="nav-item">
+          <a href="#actus">Actualités
+            <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-panel">
+            <div class="dropdown-inner">
+              <ul>
+                <li><a href="pages/actualites.html">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/></svg></span>
+                  <span class="dd-txt"><b>Actualités</b><span>Toute l'actualité de l'institut.</span></span>
+                </a></li>
+                <li><a href="pages/evenements.html">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
+                  <span class="dd-txt"><b>Événements</b><span>Forums, conférences et rentrées.</span></span>
+                </a></li>
+                <li><a href="pages/videographie.html">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></span>
+                  <span class="dd-txt"><b>Vidéographie</b><span>La vie du campus en vidéo.</span></span>
+                </a></li>
+                <li><a href="pages/publications.html">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg></span>
+                  <span class="dd-txt"><b>Publications</b><span>Brochures, guides et rapports.</span></span>
+                </a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <!-- CONTACT -->
+        <li class="nav-item">
+          <a href="#contact">Contact
+            <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-panel">
+            <div class="dropdown-inner">
+              <ul>
+                <li><a href="pages/contact.html">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+                  <span class="dd-txt"><b>Nous contacter</b><span>Formulaire, coordonnées et horaires.</span></span>
+                </a></li>
+                <li><a href="pages/admissions.html">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg></span>
+                  <span class="dd-txt"><b>Admissions</b><span>Conditions, dossier et calendrier.</span></span>
+                </a></li>
+                <li><a href="pages/campus.html">
+                  <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                  <span class="dd-txt"><b>Le campus</b><span>Visite, équipements et accès.</span></span>
+                </a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </nav>
+
+    <a href="#contact" class="btn gold btn-header">S'inscrire</a>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="mobile-menu" aria-label="Menu mobile">
+    <a href="#accueil">Accueil</a>
+
+    <button class="mobile-dropdown-btn" data-target="mob-univ">L'Université
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+    <div class="mobile-submenu" id="mob-univ">
+      <a href="pages/apropos.html">Qui sommes-nous ?</a>
+      <a href="pages/mot-du-dg.html">Mot du Directeur</a>
+      <a href="pages/mission.html">Notre mission</a>
+      <a href="pages/equipe.html">Notre équipe</a>
+      <a href="pages/valeurs.html">Nos valeurs</a>
+    </div>
+
+    <button class="mobile-dropdown-btn" data-target="mob-form">Formations
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+    <div class="mobile-submenu" id="mob-form">
+      <a href="pages/gestion-finance.html">Gestion, Commerce &amp; Finance</a>
+      <a href="pages/informatique-digital.html">Informatique &amp; Numérique</a>
+      <a href="pages/genie-civil.html">Génie civil &amp; Industriel</a>
+      <a href="pages/sante-sciences.html">Santé &amp; Sciences de la Vie</a>
+      <a href="pages/communication-marketing.html">Communication &amp; Marketing</a>
+      <a href="pages/droit-sciences-sociales.html">Droit, RH &amp; Sciences Sociales</a>
+    </div>
+
+    <button class="mobile-dropdown-btn" data-target="mob-prog">Programmes
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+    <div class="mobile-submenu" id="mob-prog">
+      <a href="pages/licence-pro.html">Licence Professionnelle</a>
+      <a href="pages/master-pro.html">Master Professionnel</a>
+      <a href="pages/bts-dut.html">BTS &amp; DUT</a>
+      <a href="pages/formation-continue.html">Formation Continue</a>
+      <a href="pages/certifications.html">Certifications</a>
+    </div>
+
+    <button class="mobile-dropdown-btn" data-target="mob-vision">Vision 2030
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+    <div class="mobile-submenu" id="mob-vision">
+      <a href="pages/vision-2030.html">Notre vision</a>
+      <a href="pages/objectifs-strategiques.html">Objectifs stratégiques</a>
+      <a href="pages/accreditations.html">Accréditations</a>
+    </div>
+
+    <button class="mobile-dropdown-btn" data-target="mob-actus">Actualités
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+    <div class="mobile-submenu" id="mob-actus">
+      <a href="pages/actualites.html">Actualités</a>
+      <a href="pages/evenements.html">Événements</a>
+      <a href="pages/videographie.html">Vidéographie</a>
+      <a href="pages/publications.html">Publications</a>
+    </div>
+
+    <button class="mobile-dropdown-btn" data-target="mob-contact">Contact
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+    <div class="mobile-submenu" id="mob-contact">
+      <a href="pages/contact.html">Nous contacter</a>
+      <a href="pages/admissions.html">Admissions</a>
+      <a href="pages/campus.html">Le campus</a>
+    </div>
+  </div>
+</header>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero" id="accueil" aria-label="Diaporama d'accueil">
+  <div id="slides"></div>
+  <div class="scroll-hint" aria-hidden="true"><span>Découvrir</span></div>
+  <div class="ctrl"><div class="wrap">
+    <div class="dots" id="dots" role="tablist" aria-label="Navigation du diaporama"></div>
+    <div class="arrows">
+      <button id="pv" aria-label="Image précédente">‹</button>
+      <button id="nx" aria-label="Image suivante">›</button>
+    </div>
+  </div></div>
+</section>
+
+<!-- ==================== PARTENAIRES ==================== -->
+<div class="partners">
+  <div class="wrap">
+    <p>En partenariat avec les acteurs majeurs de l'enseignement et de l'emploi</p>
+    <div class="partners-track">
+      <span class="partner">Ministère de l'Enseignement Supérieur</span>
+      <span class="partner">UCAD</span>
+      <span class="partner">UASZ</span>
+      <span class="partner">CCIAD</span>
+      <span class="partner">PNUD</span>
+      <span class="partner">Entreprises Partenaires</span>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== STATS ==================== -->
+<div class="stats">
+  <svg class="wave" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,50 C240,90 480,10 720,50 C960,90 1200,10 1440,50 L1440,0 L0,0 Z" fill="#eff6ff"/>
+  </svg>
+  <div class="wrap">
+    <div class="stat-item"><b data-n="4500" data-s="+">0</b><span>Étudiants formés depuis 2001</span></div>
+    <div class="stat-item"><b data-n="42">0</b><span>Filières professionnelles</span></div>
+    <div class="stat-item"><b data-n="92" data-s="%">0</b><span>Taux d'insertion professionnelle</span></div>
+    <div class="stat-item"><b data-n="25" data-s=" ans">0</b><span>D'expérience au service des talents</span></div>
+  </div>
+</div>
+
+<!-- ==================== À PROPOS ==================== -->
+<section class="about" id="apropos"><div class="wrap">
+  <div class="pic rv"><div class="img" data-img="about"></div></div>
+  <div class="rv delay-1">
+    <span class="eyebrow">L'Université</span>
+    <h2 data-type data-type-speed="30">Une université professionnelle</h2>
+    <p>Placée sous la tutelle du <strong>Ministère de l'Enseignement Supérieur</strong>, l'ISTP a pour mission de former les cadres, techniciens et entrepreneurs dont le Sénégal et l'Afrique de l'Ouest ont besoin.</p>
+    <p>Elle conjugue <strong>excellence académique et professionnalisation</strong> : programmes co-construits avec les entreprises, stages obligatoires, alternance, incubateur de start-ups et accompagnement à l'insertion professionnelle.</p>
+    <div class="vals">
+      <div><b>Former</b><span>Des diplômés immédiatement opérationnels.</span></div>
+      <div><b>Innover</b><span>Pédagogies actives, projets et numérique.</span></div>
+      <div><b>Accompagner</b><span>Chaque étudiant vers son projet professionnel.</span></div>
+      <div><b>Ouvrir</b><span>Partenariats nationaux et internationaux.</span></div>
+    </div>
+    <a href="#projets" class="btn green">Découvrir nos programmes →</a>
+  </div>
+</div></section>
+
+<!-- ==================== SECTEURS ==================== -->
+<section class="sectors" id="secteurs"><div class="wrap">
+  <div class="head rv">
+    <div>
+      <span class="eyebrow">Nos domaines</span>
+      <h2 data-type data-type-speed="30">Nos filières de formation</h2>
+      <p class="lead">De la gestion au numérique, de l'ingénierie à la santé, l'ISTP couvre les grands domaines d'activité de l'économie sénégalaise.</p>
+    </div>
+    <a href="#contact" class="btn dark">Télécharger la brochure →</a>
+  </div>
+  <div class="grid3">
+    <article class="card">
+      <div class="img" data-img="gestion"></div>
+      <div class="in">
+        <span class="tag">Gestion · Finance</span>
+        <h3>Gestion, Commerce &amp; Finance</h3>
+        <p>Comptabilité, contrôle de gestion, audit, banque, assurance, marketing et commerce international. Des parcours tournés vers l'entreprise.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="img" data-img="info"></div>
+      <div class="in">
+        <span class="tag">Informatique · Digital</span>
+        <h3>Informatique &amp; Numérique</h3>
+        <p>Développement web et mobile, réseaux, cybersécurité, data science, intelligence artificielle et transformation digitale.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="img" data-img="ingenierie"></div>
+      <div class="in">
+        <span class="tag">Ingénierie</span>
+        <h3>Génie civil &amp; Industriel</h3>
+        <p>Bâtiment et travaux publics, génie électrique, génie mécanique, énergies renouvelables et maintenance industrielle.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="img" data-img="sante"></div>
+      <div class="in">
+        <span class="tag">Santé</span>
+        <h3>Santé &amp; Sciences de la Vie</h3>
+        <p>Soins infirmiers, biologie médicale, pharmacie, santé publique, gestion des structures sanitaires et bio-technologies.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="img" data-img="communication"></div>
+      <div class="in">
+        <span class="tag">Communication · Médias</span>
+        <h3>Communication &amp; Marketing</h3>
+        <p>Journalisme, communication institutionnelle, marketing digital, relations publiques, création audiovisuelle et médias.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="img" data-img="droit"></div>
+      <div class="in">
+        <span class="tag">Droit · Sciences Sociales</span>
+        <h3>Droit, RH &amp; Sciences Sociales</h3>
+        <p>Droit des affaires, droit social, ressources humaines, sciences politiques, relations internationales et gestion publique.</p>
+      </div>
+    </article>
+  </div>
+</div></section>
+
+<!-- ==================== PROJETS ==================== -->
+<section class="projects" id="projets"><div class="wrap">
+  <div class="rv">
+    <span class="eyebrow">Nos parcours</span>
+    <h2 data-type data-type-speed="35">Programmes phares</h2>
+    <p class="lead" style="margin-bottom:34px">Des parcours diplômants et qualifiants, du BTS au Master professionnel, conçus avec les entreprises.</p>
+    <a href="#contact" class="btn green">S'inscrire à un programme →</a>
+  </div>
+  <div class="proj-list">
+    <div class="proj">
+      <div class="num">01</div>
+      <div>
+        <b>Licence Professionnelle (Bac +3)</b>
+        <span>Parcours diplômants en 3 ans, en formation initiale, alternance ou continue. Stages obligatoires chaque année et projet de fin d'études.</span>
+      </div>
+    </div>
+    <div class="proj">
+      <div class="num">02</div>
+      <div>
+        <b>Master Professionnel (Bac +5)</b>
+        <span>Formations d'excellence orientées vers l'expertise métier, la recherche appliquée et l'accès aux postes de responsabilité.</span>
+      </div>
+    </div>
+    <div class="proj">
+      <div class="num">03</div>
+      <div>
+        <b>BTS &amp; DUT</b>
+        <span>Parcours courts et opérationnels en 2 ans, plébiscités par les entreprises pour leur proximité avec les besoins du terrain.</span>
+      </div>
+    </div>
+    <div class="proj">
+      <div class="num">04</div>
+      <div>
+        <b>Formation Continue &amp; Executive Education</b>
+        <span>Modules courts pour les professionnels en activité : mise à niveau, spécialisation, reconversion et développement des compétences.</span>
+      </div>
+    </div>
+    <div class="proj">
+      <div class="num">05</div>
+      <div>
+        <b>Certifications professionnelles</b>
+        <span>Certifications reconnues dans les métiers du numérique, de la gestion, de la santé et des langues, validées par des examens externes.</span>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ==================== OBJECTIF 2030 ==================== -->
+<section class="goal" id="objectif"><div class="wrap">
+  <div class="rv">
+    <span class="eyebrow" style="color:var(--gold)">Horizon 2030</span>
+    <h2 data-type data-type-speed="30">Notre vision stratégique</h2>
+    <p>L'ISTP s'engage à devenir une référence africaine de la formation professionnelle, accessible et tournée vers l'emploi.</p>
+    <ul>
+      <li>20 000 étudiants formés à l'horizon 2030</li>
+      <li>100 % des programmes accrédités et certifiés</li>
+      <li>Un campus connecté et écoresponsable</li>
+      <li>Des milliers d'emplois créés par nos diplômés</li>
+    </ul>
+  </div>
+  <div class="rv delay-1 big-wrap">
+    <span class="big" data-type data-type-speed="90">92%</span>
+    <small>de nos diplômés<br>insérés dans l'emploi<br>dans les 6 mois</small>
+    <div class="progress" aria-hidden="true"></div>
+  </div>
+</div></section>
+
+<!-- ==================== ACTUALITÉS ==================== -->
+<section class="news" id="actus"><div class="wrap">
+  <div class="head rv">
+    <div>
+      <span class="eyebrow">Actualités</span>
+      <h2 data-type data-type-speed="35">Les temps forts</h2>
+      <p class="lead">Rentrée académique, partenariats, événements étudiants et vie du campus.</p>
+    </div>
+    <a href="#contact" class="btn ghost">Toutes les actualités →</a>
+  </div>
+  <div class="nw">
+    <article class="big">
+      <div class="img-wrap"><div class="img" data-img="news1"></div></div>
+      <div class="in">
+        <time>20 septembre 2026</time>
+        <h3>Ouverture des inscriptions pour la rentrée 2026-2027</h3>
+        <p>Les candidatures sont ouvertes pour toutes les filières de Licence Professionnelle, Master, BTS et DUT. Un dispositif d'accompagnement personnalisé est mis en place pour aider chaque candidat à choisir son parcours.</p>
+        <span class="read">Lire l'article →</span>
+      </div>
+    </article>
+    <div class="col">
+      <article>
+        <div class="img-wrap"><div class="img" data-img="news2" style="height:160px"></div></div>
+        <div class="in">
+          <time>31 mars 2026</time>
+          <h3>Nouveau partenariat international</h3>
+          <p>L'ISTP signe une convention avec trois universités européennes pour la mobilité étudiante et les doubles diplômes.</p>
+          <span class="read">Lire →</span>
+        </div>
+      </article>
+      <article>
+        <div class="img-wrap"><div class="img" data-img="news3" style="height:160px"></div></div>
+        <div class="in">
+          <time>17 avril 2026</time>
+          <h3>Inauguration du campus numérique</h3>
+          <p>Un nouveau bâtiment dédié aux filières du numérique, équipé de laboratoires et d'espaces collaboratifs.</p>
+          <span class="read">Lire →</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</div></section>
+
+<!-- ==================== GALERIE ==================== -->
+<section id="galerie"><div class="wrap">
+  <div class="rv">
+    <span class="eyebrow">Galerie</span>
+    <h2 data-type data-type-speed="35">La vie à l'ISTP</h2>
+    <p class="lead">Campus, salles de cours, laboratoires et moments forts de la vie étudiante.</p>
+  </div>
+  <div class="gal" id="gal"></div>
+</div></section>
+
+<!-- ==================== TÉMOIGNAGES ==================== -->
+<section class="tem"><div class="wrap">
+  <div class="rv">
+    <span class="eyebrow">Témoignages</span>
+    <h2 data-type data-type-speed="35">Ils témoignent</h2>
+  </div>
+  <div class="qs">
+    <blockquote>Grâce à l'alternance proposée par l'ISTP, j'ai pu décrocher un CDI dans un cabinet d'audit avant même la fin de mon Master. Une vraie passerelle vers l'emploi.<cite>Aminata D., diplômée en Audit &amp; Finance</cite></blockquote>
+    <blockquote>Les projets encadrés et les stages m'ont permis de me constituer un vrai portfolio. Aujourd'hui, je travaille comme développeuse dans une entreprise de télécoms.<cite>Moussa N., diplômé en Informatique</cite></blockquote>
+    <blockquote>L'incubateur de l'ISTP m'a accompagné de l'idée à la création de mon entreprise. Un accompagnement concret, des mentors disponibles, un vrai tremplin.<cite>Fatou S., entrepreneure diplômée</cite></blockquote>
+  </div>
+</div></section>
+
+<!-- ==================== CTA BAND ==================== -->
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Prêt à construire votre avenir professionnel ?</h2>
+    <p>Rejoignez une université qui place l'emploi, l'alternance et l'entrepreneuriat au cœur de ses formations.</p>
+    <a href="#contact" class="btn">Déposer ma candidature →</a>
+  </div>
+</section>
+
+<!-- ==================== CONTACT ==================== -->
+<section class="ct" id="contact">
+  <svg class="wave" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <linearGradient id="ctaGrad" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#60a5fa"/>
+        <stop offset="100%" stop-color="#3b82f6"/>
+      </linearGradient>
+    </defs>
+    <path d="M0,50 C240,90 480,10 720,50 C960,90 1200,10 1440,50 L1440,0 L0,0 Z" fill="url(#ctaGrad)"/>
+  </svg>
+  <div class="wrap">
+  <div class="rv">
+    <span class="eyebrow" style="color:var(--gold)">Contact</span>
+    <h2 data-type data-type-speed="35">Parlons de votre projet</h2>
+    <p style="max-width:440px">Notre équipe vous répond sous 48 heures pour vous accompagner dans votre inscription ou votre projet de formation.</p>
+    <ul>
+      <li><b>Campus principal</b>Avenue Cheikh Anta Diop, Point E – Dakar, Sénégal</li>
+      <li><b>Téléphone</b>+221 33 869 55 04</li>
+      <li><b>Courriel</b>admissions@ISTP.sn</li>
+      <li><b>Bureau annexe</b>Cité Keur Gorgui, Immeuble ISTP – Dakar</li>
+      <li><b>Formation continue</b>fc@ISTP.sn · +221 33 869 55 10</li>
+    </ul>
+  </div>
+  <form class="rv delay-1" id="fm" novalidate>
+    <div class="r">
+      <input required placeholder="Nom complet" aria-label="Nom complet" autocomplete="name" name="nom">
+      <input required type="tel" placeholder="Téléphone" aria-label="Téléphone" autocomplete="tel" name="telephone">
+    </div>
+    <input required type="email" placeholder="Courriel" aria-label="Courriel" autocomplete="email" name="email">
+    <select aria-label="Sujet de votre demande" name="sujet">
+      <option value="">Choisissez un sujet…</option>
+      <option>Demande d'inscription</option>
+      <option>Formation continue</option>
+      <option>Partenariat entreprise</option>
+      <option>Presse</option>
+      <option>Autre</option>
+    </select>
+    <textarea rows="5" placeholder="Décrivez votre projet de formation ou votre demande…" aria-label="Message" name="message"></textarea>
+    <button class="btn gold" type="submit">Envoyer le message</button>
+    <p id="ok" role="status">✓ Merci, votre message a bien été envoyé. Nous vous répondrons sous 48 heures.</p>
+  </form>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer><div class="wrap">
+  <div class="grid">
+    <div>
+      <div class="brand">
+        <span class="mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2 L1 8 L1 9.6 L23 9.6 L23 8 Z"/>
+            <rect x="2" y="10.2" width="20" height="1.8"/>
+            <rect x="4" y="12.4" width="2" height="7.4"/>
+            <rect x="8.5" y="12.4" width="2" height="7.4"/>
+            <rect x="13.5" y="12.4" width="2" height="7.4"/>
+            <rect x="18" y="12.4" width="2" height="7.4"/>
+            <rect x="2" y="20.2" width="20" height="1.8"/>
+          </svg>
+        </span>
+        <b>ISTP<small>Université Professionnelle du Sénégal</small></b>
+      </div>
+      <p style="color:#8ba0c0;font-size:.88rem;line-height:1.7;max-width:340px">Au service de la réussite des talents depuis 2001. Sous la tutelle du Ministère de l'Enseignement Supérieur, de la Recherche et de l'Innovation.</p>
+    </div>
+    <div>
+      <h4>L'Université</h4>
+      <ul>
+        <li><a href="pages/apropos.html">Qui sommes-nous ?</a></li>
+        <li><a href="pages/mot-du-dg.html">Mot du Directeur</a></li>
+        <li><a href="pages/mission.html">Notre mission</a></li>
+        <li><a href="pages/equipe.html">Notre équipe</a></li>
+        <li><a href="pages/valeurs.html">Nos valeurs</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Formations</h4>
+      <ul>
+        <li><a href="pages/gestion-finance.html">Gestion &amp; Finance</a></li>
+        <li><a href="pages/informatique-digital.html">Informatique &amp; Digital</a></li>
+        <li><a href="pages/genie-civil.html">Génie civil &amp; Industriel</a></li>
+        <li><a href="pages/sante-sciences.html">Santé &amp; Sciences</a></li>
+        <li><a href="pages/communication-marketing.html">Communication</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>Avenue Cheikh Anta Diop, Dakar</li>
+        <li>+221 33 869 55 04</li>
+        <li>admissions@ISTP.sn</li>
+        <li>Lun–Ven · 8h–18h</li>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom">
+    <span>© 2026 ISTP – Tous droits réservés</span>
+    <span>
+      <a href="#">Mentions légales</a>
+      <a href="#">Politique de confidentialité</a>
+      <a href="#">Plan du site</a>
+    </span>
+  </div>
+</div></footer>
+
+<!-- ==================== JSON-LD ==================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollegeOrUniversity",
+  "name": "ISTP – Université Professionnelle du Sénégal",
+  "url": "https://www.ISTP.sn",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Avenue Cheikh Anta Diop, Point E",
+    "addressLocality": "Dakar",
+    "addressCountry": "SN"
+  },
+  "telephone": "+221338695504",
+  "email": "admissions@ISTP.sn"
+}
+</script>
+
+<script>
+/* =====================================================================
+   IMAGES
+   ===================================================================== */
+const U = (id, w = 1600) => `https://images.unsplash.com/${id}?w=${w}&q=80&auto=format&fit=crop`;
+
+const IMAGES = {
+  slides: [
+    {
+      img: "images/istp.png",
+      tag: "Université Professionnelle",
+      titre: "L'université qui transforme les talents",
+      texte: "42 filières professionnelles, 92 % d'insertion et un campus moderne au cœur de Dakar.",
+      bouton: ["Découvrir l'ISTP", "#apropos"]
+    },
+    {
+      img: U('photo-1607237138185-eedd9c632b0b'),
+      tag: "Formations diplômantes",
+      titre: "Du BTS au Master professionnel",
+      texte: "Des parcours conçus avec les entreprises, en formation initiale, alternance ou continue.",
+      bouton: ["Nos programmes", "#projets"]
+    },
+    {
+      img: U('photo-1523240795612-9a054b0db644'),
+      tag: "Insertion &amp; Emploi",
+      titre: "92 % de nos diplômés recrutés",
+      texte: "Un accompagnement personnalisé vers l'emploi : stages, alternance, coaching et réseau d'entreprises partenaires.",
+      bouton: ["En savoir plus", "#secteurs"]
+    },
+    {
+      img: U('photo-1562774053-701939374585'),
+      tag: "Campus &amp; Vie étudiante",
+      titre: "Un campus connecté et innovant",
+      texte: "Salles connectées, laboratoires, bibliothèque et espaces de vie étudiante au cœur de Dakar.",
+      bouton: ["Visiter le campus", "#galerie"]
+    }
+  ],
+  about:      U('photo-1541339907198-e08756dedf3f', 1200),
+  gestion:    U('photo-1554224155-6726b3ff858f'),
+  info:       U('photo-1517245386807-bb43f82c33c4'),
+  ingenierie: U('photo-1581092918056-0c4c3acd3789'),
+  sante:      U('photo-1631217868264-e5b90bb7e133'),
+  communication: U('photo-1552664730-d307ca884978'),
+  droit:      U('photo-1589829545856-d10d557cf95f'),
+  news1:      U('photo-1523240795612-9a054b0db644'),
+  news2:      U('photo-1523580494863-6f3031224c94'),
+  news3:      U('photo-1562774053-701939374585', 800),
+  galerie: [
+    U('photo-1541339907198-e08756dedf3f'),
+    U('photo-1523240795612-9a054b0db644'),
+    U('photo-1523580494863-6f3031224c94'),
+    U('photo-1562774053-701939374585'),
+    U('photo-1607237138185-eedd9c632b0b'),
+    U('photo-1498243691581-b145c3f54a5a')
+  ]
+};
+
+const DUREE_DIAPO = 7000;
+
+const FALLBACK_GRADIENTS = [
+  'linear-gradient(135deg, #0a1f44, #2563eb)',
+  'linear-gradient(135deg, #153a75, #60a5fa)',
+  'linear-gradient(135deg, #2563eb, #3b82f6)',
+  'linear-gradient(135deg, #0a1f44, #3b82f6)'
+];
+let gradIndex = 0;
+function safeBg(el, url) {
+  const img = new Image();
+  img.onload  = () => { el.style.backgroundImage = `url('${url}')`; };
+  img.onerror = () => {
+    el.style.backgroundImage = FALLBACK_GRADIENTS[gradIndex % FALLBACK_GRADIENTS.length];
+    gradIndex++;
+  };
+  img.src = url;
+}
+
+document.querySelectorAll('[data-img]').forEach(e => {
+  const key = e.dataset.img;
+  if (IMAGES[key]) safeBg(e, IMAGES[key]);
+});
+
+document.getElementById('gal').innerHTML = IMAGES.galerie.map((v) =>
+  `<div class="img" data-bg="${v}" role="img" aria-label="Photo de la vie à l'ISTP"></div>`
+).join('');
+document.querySelectorAll('#gal .img[data-bg]').forEach(el => {
+  safeBg(el, el.dataset.bg);
+});
+
+const box = document.getElementById('slides'), dots = document.getElementById('dots');
+IMAGES.slides.forEach((s, k) => {
+  box.insertAdjacentHTML('beforeend', `
+    <div class="slide" role="group" aria-roledescription="slide" aria-label="${k+1} sur ${IMAGES.slides.length}">
+      <div class="bg" data-bg="${s.img}"></div>
+      <div class="cap">
+        <span class="tag">${s.tag}</span>
+        <h1>${s.titre}</h1>
+        <p>${s.texte}</p>
+        <div>
+          <a class="btn gold" href="${s.bouton[1]}">${s.bouton[0]}</a>
+          <a class="btn line" href="#contact">Nous contacter</a>
+        </div>
+      </div>
+    </div>`);
+  dots.insertAdjacentHTML('beforeend', `<button role="tab" aria-label="Image ${k+1}"></button>`);
+});
+
+document.querySelectorAll('.slide .bg[data-bg]').forEach(el => {
+  safeBg(el, el.dataset.bg);
+});
+
+const sl = [...box.children], dt = [...dots.children];
+dots.style.setProperty('--d', DUREE_DIAPO + 'ms');
+let cur = 0, timer;
+function go(n) {
+  cur = (n + sl.length) % sl.length;
+  sl.forEach((s, k) => s.classList.toggle('on', k === cur));
+  dt.forEach((d, k) => {
+    d.classList.remove('on');
+    d.setAttribute('aria-selected', k === cur);
+    if (k === cur) { void d.offsetWidth; d.classList.add('on'); }
+  });
+  clearTimeout(timer);
+  timer = setTimeout(() => go(cur + 1), DUREE_DIAPO);
+}
+dt.forEach((d, k) => d.onclick = () => go(k));
+document.getElementById('nx').onclick = () => go(cur + 1);
+document.getElementById('pv').onclick = () => go(cur - 1);
+go(0);
+
+/* =====================================================================
+   HEADER + MENU MOBILE
+   ===================================================================== */
+const hd = document.getElementById('hd');
+const bg = document.getElementById('bg');
+const mobileMenu = document.getElementById('mobileMenu');
+
+addEventListener('scroll', () => hd.classList.toggle('solid', scrollY > 60), { passive: true });
+
+bg.onclick = () => {
+  const open = mobileMenu.classList.toggle('open');
+  hd.classList.toggle('menu-open', open);
+  bg.setAttribute('aria-expanded', open);
+  bg.textContent = open ? '✕' : '☰';
+};
+
+mobileMenu.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
+    hd.classList.remove('menu-open');
+    bg.textContent = '☰';
+    bg.setAttribute('aria-expanded', 'false');
+  });
+});
+
+document.querySelectorAll('.mobile-dropdown-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = document.getElementById(btn.dataset.target);
+    if (!target) return;
+    const isOpen = target.classList.toggle('open');
+    btn.classList.toggle('open', isOpen);
+  });
+});
+
+/* =====================================================================
+   ANIMATIONS SCROLL
+   ===================================================================== */
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+}), { threshold: .12, rootMargin: '0px 0px -60px 0px' });
+document.querySelectorAll('.rv').forEach(e => io.observe(e));
+
+const cardObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    const el = entry.target;
+    const order = el.dataset.order ? parseInt(el.dataset.order) : 0;
+    const delay = order * 120;
+    setTimeout(() => el.classList.add('in'), delay);
+    cardObserver.unobserve(el);
+  });
+}, { threshold: 0.15, rootMargin: '0px 0px -80px 0px' });
+
+document.querySelectorAll('.grid3, .proj-list, .nw, .gal, .qs, .stats .wrap').forEach(group => {
+  [...group.children].forEach((child, i) => {
+    if (child.matches('.card, .proj, .nw article, .gal .img, blockquote, .stat-item, .col')) {
+      if (child.classList.contains('col')) {
+        [...child.children].forEach((sub, j) => {
+          sub.dataset.order = j + 1;
+          cardObserver.observe(sub);
+        });
+      } else {
+        child.dataset.order = i;
+        cardObserver.observe(child);
+      }
+    }
+  });
+});
+
+function typeEffect(el) {
+  const speed = parseInt(el.dataset.typeSpeed) || 35;
+  const delay = parseInt(el.dataset.typeDelay) || 0;
+  const originalHTML = el.innerHTML;
+  const text = el.textContent.trim();
+  el.textContent = '';
+  el.classList.add('type', 'typing');
+  el.style.visibility = 'visible';
+  let i = 0;
+  setTimeout(() => {
+    const interval = setInterval(() => {
+      if (i < text.length) {
+        el.textContent += text.charAt(i);
+        i++;
+      } else {
+        clearInterval(interval);
+        el.classList.remove('typing');
+        el.classList.add('done');
+        setTimeout(() => {
+          el.innerHTML = originalHTML;
+          el.style.borderRight = 'none';
+        }, 350);
+      }
+    }, speed);
+  }, delay);
+}
+
+const typeObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      typeEffect(entry.target);
+      typeObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5, rootMargin: '0px 0px -60px 0px' });
+document.querySelectorAll('[data-type]').forEach(el => typeObserver.observe(el));
+
+const co = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return;
+  co.unobserve(e.target);
+  const el = e.target, end = +el.dataset.n, sfx = el.dataset.s || '', t0 = performance.now();
+  (function f(t) {
+    const p = Math.min((t - t0) / 1800, 1);
+    const eased = 1 - Math.pow(1 - p, 3);
+    el.textContent = Math.round(end * eased).toLocaleString('fr-FR') + sfx;
+    if (p < 1) requestAnimationFrame(f);
+  })(t0);
+}), { threshold: .6 });
+document.querySelectorAll('[data-n]').forEach(e => co.observe(e));
+
+document.getElementById('fm').onsubmit = e => {
+  e.preventDefault();
+  const ok = document.getElementById('ok');
+  ok.style.display = 'block';
+  e.target.reset();
+  setTimeout(() => { ok.style.display = 'none'; }, 6000);
+};
+</script>
+</body>
+</html>
